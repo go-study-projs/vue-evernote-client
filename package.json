@@ -16,7 +16,7 @@
     "element-theme-chalk": "^2.4.6",
     "element-ui": "^2.4.6",
     "less": "^3.8.1",
-    "loadsh": "^1.0.1",
+    "loadsh": "0.0.4",
     "markdown-it": "^8.4.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
