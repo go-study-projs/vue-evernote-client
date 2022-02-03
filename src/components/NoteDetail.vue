@@ -28,7 +28,7 @@
 
 <script>
 import NoteSidebar from '@/components/NoteSidebar'
-import _ from 'loadsh'
+import _ from 'lodash'
 import MarkdownIt from 'markdown-it'
 import { mapActions, mapGetters, mapMutations } from 'vuex'
 
