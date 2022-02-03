@@ -19,5 +19,8 @@ module.exports = {
     'no-extra-semi': 0,
     'no-unused-vars': 0,
     'newline-per-chained-call': 'off'
+  },
+  globals: {
+    __BASE_URL__: true
   }
 }
