@@ -34,7 +34,7 @@ Vue.prototype.$prompt = MessageBox.prompt
 const app = new Vue({
   router,
   store,
-  render: (h) => h(App)
+  render: h => h(App)
 })
 
 app.$mount('#app')

@@ -1,16 +1,15 @@
 <template>
-    <div id="app">
-        <sidebar></sidebar>
-        <router-view></router-view>
-    </div>
-
+  <div id="app">
+    <sidebar></sidebar>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import sidebar from '@/components/Sidebar'
 export default {
-    name: 'App',
-    components: { sidebar }
+  name: 'App',
+  components: { sidebar }
 }
 </script>
 
