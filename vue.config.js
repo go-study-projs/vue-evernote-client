@@ -6,8 +6,6 @@ const webpack = require('webpack')
  * 具体参考： https://cli.vuejs.org/zh/guide/mode-and-env.html
  */
 
-
-
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
  */
@@ -21,7 +19,8 @@ module.exports = {
     plugins: [
       new webpack.DefinePlugin({
         // config axios baseURL
-        __BASE_URL__: JSON.stringify('https://note-server.hunger-valley.com')
+        // __BASE_URL__: JSON.stringify('https://note-server.hunger-valley.com')
+        __BASE_URL__: JSON.stringify('http://localhost:8080')
         // __BASE_URL__: JSON.stringify('/')
       })
     ]

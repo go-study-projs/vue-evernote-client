@@ -8,10 +8,10 @@ import trash from './modules/trash'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    modules: {
-        notebook,
-        note,
-        user,
-        trash
-    }
+  modules: {
+    notebook,
+    note,
+    user,
+    trash
+  }
 })
