@@ -2,7 +2,7 @@
 
 一款仿印象笔记的 web app，此为前端代码
 
-后端代码见[这里]（github.com/go-study-projs/vue-evernote-api）
+后端代码见[这里](github.com/go-study-projs/vue-evernote-api)
 
 ## 技术选型
 
