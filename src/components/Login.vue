@@ -50,7 +50,6 @@
 
 <script>
 import { mapActions } from 'vuex'
-// import setLocal from '../helpers/local'
 
 export default {
   data() {
