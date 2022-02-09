@@ -1,6 +1,7 @@
 import axios from 'axios'
 import baseURLConfig from './config-baseURL'
 import { Message } from 'element-ui'
+import router from '../router'
 
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 axios.defaults.baseURL = baseURLConfig.baseURL
@@ -40,11 +41,6 @@ export default function request(url, type = 'GET', data = {}) {
 
     axios(options)
       .then(res => {
-        // if (res.status == 204) {
-        //   //不处理option请求
-        //   return
-        // }
-
         if (res.status >= 200 && res.status < 400) {
           resolve(res.data)
         } else {
@@ -56,7 +52,7 @@ export default function request(url, type = 'GET', data = {}) {
           // 说明 token 验证失败
           // 可以直接跳转到登录页面，重新登录获取 token
           Message.error('请重新登陆')
-          location.href = '/login'
+          router.push('login')
         }
       })
       .catch(res => {
